@@ -11,89 +11,103 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+            <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    
     <!--Шапка сайта-->
     <header class="header">
-        <nav>
+        <div class="container header-container">
+        <nav class="header-nav">
             <a href="./index.html" class="header-logo">
             <span class="header-accent">Web</span>Studio
             </a>
 
             <ul class="header-site-nav list">
-                <li><a href="./index.html" class="header-link link-current">Студия</a></li>
-                <li><a href="./portfolio.html" class="header-link">Портфолио</a></li>
-                <li><a href="" class="header-link">Контакты</a></li>
+                <li class="header-nav-list"><a href="./index.html" class="header-link link-current">Студия</a></li>
+                <li class="header-nav-list"><a href="./portfolio.html" class="header-link">Портфолио</a></li>
+                <li class="header-nav-list"><a href="" class="header-link">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="header-adress-nav list">
-            <li><a href="mailto:info@devstudio.com" target="_blank" class="header-adress-link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="header-adress-link">+38 096 111 11 11</a></li>
-        </ul>
 
+            <ul class="header-adress-nav list">
+                <li class="header-adress-list"><a href="mailto:info@devstudio.com" target="_blank" class="header-adress-link">info@devstudio.com</a></li>
+                <li class="header-adress-list"><a href="tel:+380961111111" class="header-adress-link">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
 
 
     <main>
 
         <!--Заказать услугу-->
-        <section class="hero">
-            <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
-
+        <section class="hero section">
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
+                <button type="button" class="hero-btn">Заказать услугу</button>       
+            </div>
         </section>
 
         <!--Особенности-->
-        <section class="features">
-            <h2 class="features-general-title">Особенности</h2>
-            <ul>
-                <li>
+        <section class="features section">
+            <div class="container">
+            <h2 class="visually-hidden">Особенности</h2>
+            <ul class="features-list">
+                <li class="features-item">
                     <h3 class="features-title">Внимание к деталям</h3>
                     <p class="features-text">
                         Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h3 class="features-title">Пунктуальность</h3>
                     <p class="features-text">
                         Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h3 class="features-title">Планирование</h3>
                     <p class="features-text">
                         Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h3 class="features-title">Современные технологии</h3>
                     <p class="features-text">
                         Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                     </p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!--Чем мы занимаемся-->
-        <section class="works">
+        <section class="works section">
+            <div class="container">
             <h2 class="works-title">Чем мы занимаемся</h2>
             <ul class="works-list">
-                <li works-item>
+                <li class="works-item">
                     <img src="./images/image1.jpg" class="works-img" alt="Человек печатает на клавиатуре" width="370" height="294" />
                 </li>
-                <li>
+                <li class="works-item">
                     <img src="./images/image2.jpg" class="works-img" alt="Человек держит в руках телефон" width="370" height="294" />
                 </li>
-                <li>
+                <li class="works-item">
                     <img src="./images/image3.jpg" class="works-img" alt="Человек работает на планшете" width="370" height="294" />
                 </li>
             </ul>
+            </div>
         </section>
 
         <!--Команда-->
-        <section class="team">
+        <section class="team section">
+            <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-item">
@@ -118,11 +132,13 @@
                     <p lang="en" class="team-position">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
     <!--Футер-->
     <footer class="footer">
+        <div class="container">
         <a href="./index.html" class="footer-logo">
             <span class="footer-accent">Web</span>Studio
         </a>
@@ -141,7 +157,7 @@
 
             </ul>
         </address>
-
+        </div>
     </footer>
 </body>
 

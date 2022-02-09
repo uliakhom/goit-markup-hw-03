@@ -10,47 +10,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 <!--Шапка сайта-->
 <header class="header">
-    <nav>
-        <a href="./index.html" class="header-logo">
-            <span class="header-accent">Web</span>Studio
-        </a>
+    <div class="container header-container">
+        <nav class="header-nav">
+            <a href="./index.html" class="header-logo">
+                <span class="header-accent">Web</span>Studio
+            </a>
 
-        <ul class="header-site-nav list">
-            <li><a href="./index.html" class="header-link">Студия</a></li>
-            <li><a href="./portfolio.html" class="header-link link-current">Портфолио</a></li>
-            <li><a href="" class="header-link">Контакты</a></li>
+            <ul class="header-site-nav list">
+                <li class="header-nav-list"><a href="./index.html" class="header-link">Студия</a></li>
+                <li class="header-nav-list"><a href="./portfolio.html" class="header-link link-current">Портфолио</a></li>
+                <li class="header-nav-list"><a href="" class="header-link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <ul class="header-adress-nav list">
+            <li class="header-adress-list"><a href="mailto:info@devstudio.com" target="_blank"
+                    class="header-adress-link">info@devstudio.com</a></li>
+            <li class="header-adress-list"><a href="tel:+380961111111" class="header-adress-link">+38 096 111 11 11</a>
+            </li>
         </ul>
-    </nav>
-    <ul class="header-adress-nav list">
-        <li><a href="mailto:info@devstudio.com" target="_blank" class="header-adress-link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="header-adress-link">+38 096 111 11 11</a></li>
-    </ul>
+    </div>
+</header>
+
 
 </header>
 
     <main>
         <!--Примеры работ-->
-        <section class="portfolio">
-            <h1 class="portfolio-title">Портфолио</h1>
-            <ul class="portfolio-buttons-list">
-                <li><button type="button" class="portfolio-btn">Все</button></li>
-                <li><button type="button" class="portfolio-btn">Веб-сайты</button></li>
-                <li><button type="button" class="portfolio-btn">Приложения</button></li>
-                <li><button type="button" class="portfolio-btn">Дизайн</button></li>
-                <li><button type="button" class="portfolio-btn">Маркетинг</button></li>
-            </ul>
+        <section class="portfolio"> 
+            <div class="container">
+            <h1 class="visually-hidden">Портфолио</h1>
+                <ul class="portfolio-buttons-list">
+                    <li class="portfolio-btn-item"><button type="button" class="portfolio-btn">Все</button></li>
+                    <li class="portfolio-btn-item"><button type="button" class="portfolio-btn">Веб-сайты</button></li>
+                    <li class="portfolio-btn-item"><button type="button" class="portfolio-btn">Приложения</button></li>
+                    <li class="portfolio-btn-item"><button type="button" class="portfolio-btn">Дизайн</button></li>
+                    <li class="portfolio-btn-item"><button type="button" class="portfolio-btn">Маркетинг</button></li>
+                </ul>
 
-            <ul class="portfolio-card-list">
+                <ul class="portfolio-card-list">
                 <li class="portfolio-card-item">
                     <a href="" class="portfolio-card-link">
-                        <img class="porfolio-card-img"
+                    <img class="porfolio-card-img"
                     src="./images/portfolio-01.jpg" 
                     alt="Скрин Технокряк" 
                     width="370"
@@ -157,7 +170,8 @@
                 </a>
                 </li>
             </ul>
-
+        
+</div>
         </section>
 
         
@@ -165,26 +179,28 @@
 
     <!--Футер-->
     <footer class="footer">
-        <a href="./index.html" class="footer-logo">
-            <span class="footer-accent">Web</span>Studio
-        </a>
+        <div class="container">
+            <a href="./index.html" class="footer-logo">
+                <span class="footer-accent">Web</span>Studio
+            </a>
     
-        <address class="footer-adress">
-            <ul class="footer-list">
-                <li class="footer-item">
-                    <a href="https://goo.gl/maps/eppCBXv3mgWTVe7j6" target="_blank" class="footer-adress-map footer-link">г.
-                        Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="footer-item">
-                    <a href="mailto:info@example.com" target="_blank" class="footer-mail footer-link">info@example.com</a>
-                </li>
-                <li class="footer-item">
-                    <a href="tel:+380991111111" class="footer-tel footer-link"> +38 099 111 11 11</a>
-                </li>
+            <address class="footer-adress">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="https://goo.gl/maps/eppCBXv3mgWTVe7j6" target="_blank"
+                            class="footer-adress-map footer-link">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="mailto:info@example.com" target="_blank"
+                            class="footer-mail footer-link">info@example.com</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="tel:+380991111111" class="footer-tel footer-link"> +38 099 111 11 11</a>
+                    </li>
     
-            </ul>
-        </address>
-    
+                </ul>
+            </address>
+        </div>
     </footer>
     </body>
     
